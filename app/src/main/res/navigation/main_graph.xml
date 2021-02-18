@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.moviesk.ui.MainFragment"
+        android:label="Películas recientes"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_moviesDetalleFragment"
+            app:destination="@id/moviesDetalleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesDetalleFragment"
+        android:name="com.example.moviesk.ui.MoviesDetalleFragment"
+        android:label="Detalle de película"
+        tools:layout="@layout/fragment_movies_detalle" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+</navigation>
