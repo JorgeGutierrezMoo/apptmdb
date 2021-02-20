@@ -3,7 +3,7 @@
 Clone the repository or download the zip file.
 Open Android Studio and go to open project.
 
-Wait to it finishes loading.
+Wait for it to finish loading.
 If testing using an actual phone:
   Connect the phone and give it access to the pc port.
   Wait until the IDE recognices it.
